@@ -34,4 +34,5 @@ plt.subplots_adjust(top=0.95, wspace=0.35)
 plt.subplots_adjust(bottom=0.1)
 plt.subplots_adjust(right=0.9)
 
-plt.show()
+
+plt.savefig('plot1.png')

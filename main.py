@@ -13,9 +13,9 @@ def index():
     return render_template('dashboard.html')
 
 
-@app.route('/test')
-def test():
-    return render_template('test.html')
+@app.route('/data')
+def data():
+    return render_template('data.html')
 
 
 @app.route('/plot.png')
