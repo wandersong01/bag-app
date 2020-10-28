@@ -1,15 +1,15 @@
-from matplotlib import pyplot as plt
+from matplotlib import pyplot as plt #imports matplotlib for use with graphs
 plt.style.use('seaborn-whitegrid')
-import csv
+import csv #imports CSV files for use with matplotlib
 
 x = []
 y = []
 xa = []
 ya = []
 
-with open('bagweights.csv','r') as csvfile:
+with open('bagweights.csv','r') as csvfile: #selects and reads thnvvnn nsi[sjntreifdi0asifik--e bagweight csv file
     plots = csv.reader(csvfile, delimiter=',')
-    next(plots)
+    next(plots) #skips the first row in the file
     for row in plots:
         x.append(int(row[1]))
         y.append(int(row[2]))
@@ -30,9 +30,8 @@ plt.title('Time vs Weight')
 plt.xlabel('Time')
 plt.ylabel('Weight')
 
-plt.subplots_adjust(top=0.95, wspace=0.35)
+plt.subplots_adjust(top=0.95, wspace=0.35) #adjusts subplots manually
 plt.subplots_adjust(bottom=0.1)
 plt.subplots_adjust(right=0.9)
 
-
-plt.savefig('plot1.png')
+plt.savefig('plot1.png') #saves plot as an image for use in the HTML format
